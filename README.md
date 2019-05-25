@@ -2,8 +2,9 @@
 
 This years challenge was on Object Localization in images.More specifically we had to find the bounding box prediction around an object in  in an image.There was only single object in an image.
 
+Given an image we had to predict the coordinates of the bounding box around the object in that image.During testing the Intersection over union (IOU) was calculated to check the performance of the model.
 
-THe whole code was run on google colab because the number of images were very large and the Convnet is deep.
+The original size of image was very high so it was scaled down and greyscaled before training.
 
 # Training Set
 It consisted of the image and corresponding coordinates of the bounding box around the object.
@@ -31,7 +32,7 @@ We created a custom neural net having the following layers
 Inspired by VGG-16 with some hyperparameter tuning
 
 _________________________________________________________________
-Layer (type)                 Output Shape              Param    
+###### Layer (type)                 Output Shape              Param    
 =================================================================
 input_1 (InputLayer)         (None, 64, 64, 1)         0         
 _________________________________________________________________
@@ -99,7 +100,7 @@ dense_3 (Dense)              (None, 1024)              2098176
 _________________________________________________________________
 batch_normalization_13 (Batc (None, 1024)              4096      
 _________________________________________________________________
-dense_4 (Dense)              (None, 4)                 4100      
+##### dense_4 (Dense)              (None, 4)                 4100      
 =================================================================
 Total params: 141,706,148
 Trainable params: 141,693,604
