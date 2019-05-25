@@ -31,7 +31,7 @@ We created a custom neural net having the following layers
 Inspired by VGG-16 with some hyperparameter tuning
 
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param    
 =================================================================
 input_1 (InputLayer)         (None, 64, 64, 1)         0         
 _________________________________________________________________
